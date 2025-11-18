@@ -1,12 +1,10 @@
 class Solution {
     fun maxSubArray(nums: IntArray): Int {
+        var currentSum = 0
         var result = nums[0]
-        var minPrefix = 0
-        var sum = 0
         for (num in nums) {
-            sum += num
-            result = maxOf(result, sum - minPrefix)
-            minPrefix = minOf(minPrefix, sum)
+            currentSum = maxOf(currentSum + num, num)
+            result = maxOf(result, currentSum)
         }
 
         return result
