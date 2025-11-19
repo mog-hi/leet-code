@@ -4,17 +4,13 @@ class Solution {
         var minLen = nums.size + 1
         var left = 0
 
-        for (idx in 0 until nums.size) {
+        for (idx in nums.indices) {
             sum += nums[idx]
 
-            while (sum >= target && left < idx) {
+            while (sum >= target && left <= idx) {
                 minLen = minOf(minLen, idx-left+1)
                 sum -= nums[left]
                 left++
-            }
-
-            if (sum >= target) {
-                minLen = minOf(minLen, idx-left+1)
             }
         }
 
