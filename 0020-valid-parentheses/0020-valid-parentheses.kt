@@ -23,8 +23,8 @@ class Solution {
 
 fun isLeft(s: Char): Boolean = s == '(' || s == '{' || s == '['
 
-fun isPair(left: Char, right: Char): Boolean = if (
+fun isPair(left: Char, right: Char): Boolean =
     (left == '[' && right == ']') ||
     (left == '{' && right == '}') ||
     (left == '(' && right == ')') 
-) true else false
+
