@@ -7,7 +7,7 @@ class Solution {
         for (idx in nums.indices) {
             sum += nums[idx]
 
-            while (sum >= target && left <= idx) {
+            while (sum >= target) {
                 minLen = minOf(minLen, idx-left+1)
                 sum -= nums[left]
                 left++
