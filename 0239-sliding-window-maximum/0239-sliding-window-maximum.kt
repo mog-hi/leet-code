@@ -3,22 +3,18 @@ class Solution {
         val queue = ArrayDeque<Int>()
         val result = mutableListOf<Int>()
         for (i in nums.indices) {
-            while (queue.isNotEmpty() && i - queue.first() >= k) {
+            if (queue.isNotEmpty() && i - queue.first() >= k) {
                 queue.removeFirst()
             }
             while (queue.isNotEmpty() && nums[queue.last()] <= nums[i]) {
                 queue.removeLast()
             }  
+        
+            queue.addLast(i)
 
             if (i >= k - 1) {
-                if (queue.isNotEmpty()) {
-                    result.add(nums[queue.first()])
-                } else {
-                    result.add(nums[i])
-                }
+                result.add(nums[queue.first()])
             }
-            
-            queue.addLast(i)
         }
 
         return result.toIntArray()
