@@ -16,6 +16,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0560-subarray-sum-equals-k](https://github.com/mog-hi/leet-code/tree/master/0560-subarray-sum-equals-k) |
 | [0739-daily-temperatures](https://github.com/mog-hi/leet-code/tree/master/0739-daily-temperatures) |
 | [0792-binary-search](https://github.com/mog-hi/leet-code/tree/master/0792-binary-search) |
+| [0875-koko-eating-bananas](https://github.com/mog-hi/leet-code/tree/master/0875-koko-eating-bananas) |
 | [0892-shortest-subarray-with-sum-at-least-k](https://github.com/mog-hi/leet-code/tree/master/0892-shortest-subarray-with-sum-at-least-k) |
 ## Hash Table
 |  |
@@ -42,6 +43,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/mog-hi/leet-code/tree/master/0167-two-sum-ii-input-array-is-sorted) |
 | [0209-minimum-size-subarray-sum](https://github.com/mog-hi/leet-code/tree/master/0209-minimum-size-subarray-sum) |
 | [0792-binary-search](https://github.com/mog-hi/leet-code/tree/master/0792-binary-search) |
+| [0875-koko-eating-bananas](https://github.com/mog-hi/leet-code/tree/master/0875-koko-eating-bananas) |
 | [0892-shortest-subarray-with-sum-at-least-k](https://github.com/mog-hi/leet-code/tree/master/0892-shortest-subarray-with-sum-at-least-k) |
 ## Sorting
 |  |
