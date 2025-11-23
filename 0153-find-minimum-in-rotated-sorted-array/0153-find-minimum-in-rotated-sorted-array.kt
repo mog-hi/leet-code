@@ -1,5 +1,9 @@
 class Solution {
     fun findMin(nums: IntArray): Int {
-        return nums.min()
+        var result = Int.MAX_VALUE
+        for (num in nums) {
+            result = minOf(num, result)
+        }
+        return result
     }
 }
