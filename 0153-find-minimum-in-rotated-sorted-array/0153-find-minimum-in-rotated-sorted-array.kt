@@ -1,9 +1,20 @@
 class Solution {
     fun findMin(nums: IntArray): Int {
-        var result = Int.MAX_VALUE
-        for (num in nums) {
-            result = minOf(num, result)
+        var left = 0
+        var right = nums.size - 1
+
+        while (left <= right) {
+            val mid = (left + right) / 2
+
+            if (nums[mid] < nums[left]) {
+                left = left + 1
+            } else if (nums[mid] > nums[right]) {
+                left = mid + 1
+            } else {
+                return nums[left]
+            }
         }
-        return result
+
+        return nums[left] 
     }
 }
