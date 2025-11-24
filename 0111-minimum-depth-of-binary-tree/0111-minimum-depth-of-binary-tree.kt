@@ -11,26 +11,25 @@
 class Solution {
     fun minDepth(root: TreeNode?): Int {
         if (root == null) return 0
-        val stack = ArrayDeque<Pair<TreeNode, Int>>()
-        stack.addLast(Pair(root!!, 1))
-        var answer = Int.MAX_VALUE
+        val queue = ArrayDeque<Pair<TreeNode, Int>>()
+        queue.addLast(Pair(root!!, 1))
 
-        while(stack.isNotEmpty()) {
-            val (temp, depth) = stack.removeLast()
+        while(queue.isNotEmpty()) {
+            val (temp, depth) = queue.removeFirst()
 
             if (temp.right == null && temp.left == null) {
-                answer = minOf(answer, depth)
+                return depth
             }
 
             if (temp.left != null) {
-                stack.addLast(Pair(temp.left, depth + 1))
+                queue.addLast(Pair(temp.left, depth + 1))
             } 
 
             if (temp.right != null) {
-                stack.addLast(Pair(temp.right, depth + 1))
+                queue.addLast(Pair(temp.right, depth + 1))
             }
         }
 
-        return answer
+        return 0
     }
 }
