@@ -1,0 +1,36 @@
+/**
+ * Example:
+ * var ti = TreeNode(5)
+ * var v = ti.`val`
+ * Definition for a binary tree node.
+ * class TreeNode(var `val`: Int) {
+ *     var left: TreeNode? = null
+ *     var right: TreeNode? = null
+ * }
+ */
+class Solution {
+    fun minDepth(root: TreeNode?): Int {
+        if (root == null) return 0
+        val stack = ArrayDeque<Pair<TreeNode, Int>>()
+        stack.addLast(Pair(root!!, 1))
+        var answer = Int.MAX_VALUE
+
+        while(stack.isNotEmpty()) {
+            val (temp, depth) = stack.removeLast()
+
+            if (temp.right == null && temp.left == null) {
+                answer = minOf(answer, depth)
+            }
+
+            if (temp.left != null) {
+                stack.addLast(Pair(temp.left, depth + 1))
+            } 
+
+            if (temp.right != null) {
+                stack.addLast(Pair(temp.right, depth + 1))
+            }
+        }
+
+        return answer
+    }
+}
