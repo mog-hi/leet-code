@@ -10,18 +10,15 @@
 
 class Solution {
     fun hasCycle(head: ListNode?): Boolean {
-        val map = mutableMapOf<ListNode?, Boolean>()
-        
-        var temp = head
-        while(temp?.next != null) {
-            if (!map.getOrDefault(temp, false)) {
-                map[temp] = true
-            } else {
-                return true
-            }
-            temp = temp?.next
-        }
+        var fast = head?.next
+        var slow = head
 
+        while (fast?.next != null){
+            if (fast == slow) return true
+            fast = fast.next?.next
+            slow = slow?.next
+        }
+        
         return false
     }
 }
