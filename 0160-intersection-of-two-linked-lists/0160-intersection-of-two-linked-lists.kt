@@ -22,24 +22,8 @@ class Solution {
         var isPointerBVisitedHeadA = false
 
         while(pointerA != pointerB) {
-            if (pointerA?.next == null) {
-                if (isPointerAVisitedHeadB) return null
-
-                pointerA = headB
-                isPointerAVisitedHeadB = true
-            } else {
-                pointerA = pointerA?.next
-            }
-
-
-            if (pointerB?.next == null) {
-                if (isPointerBVisitedHeadA) return null
-
-                pointerB = headA
-                isPointerBVisitedHeadA = true
-            } else {
-                pointerB = pointerB?.next
-            }
+            pointerA = if (pointerA == null) headB else pointerA.next
+            pointerB = if (pointerB == null) headA else pointerB.next
         }
 
         return pointerA
