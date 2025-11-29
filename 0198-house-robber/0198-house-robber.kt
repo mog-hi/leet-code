@@ -1,22 +1,16 @@
 class Solution {
     fun rob(nums: IntArray): Int {
-        val n = nums.size
-        val robs = IntArray(n)
-        
-        if (n <= 1) {
-            return nums[0]
-        } else if (n <= 2) {
-            return maxOf(nums[0], nums[1])
+        var prev1 = 0
+        var prev2 = 0
+
+        for (n in nums) {
+            val pick = prev2 + n
+            val nopick = prev1
+
+            prev1 = maxOf(pick, nopick)
+            prev2 = nopick
         }
 
-        robs[0] = nums[0]
-        robs[1] = nums[1]
-        robs[2] = nums[0] + nums[2]
-
-        for (i in 3 .. n-1) {
-            robs[i] = maxOf(robs[i-2], robs[i-3]) + nums[i]
-        }
-
-        return maxOf(robs[n-1], robs[n-2])
+        return maxOf(prev1, prev2)
     }
 }
