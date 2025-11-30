@@ -2,12 +2,15 @@ class Solution {
     fun kClosest(points: Array<IntArray>, k: Int): Array<IntArray> {
         val maxHeap = PriorityQueue<Pair<Int, IntArray>>(compareByDescending { it.first })
         
-        for (i in points.indices) {
-            val distance = points[i][0]*points[i][0] + points[i][1]*points[i][1]
-            maxHeap.add(distance to points[i])
+        for (i in 0 until k) {
+            maxHeap.add(getDistance(points[i]) to points[i])
+        }
 
-            if (maxHeap.size > k) {
+        for (i in k until points.size) {
+            val distance = getDistance(points[i])
+            if (distance < maxHeap.peek().first) {
                 maxHeap.poll()
+                maxHeap.add(distance to points[i])
             }
         }
 
@@ -19,4 +22,6 @@ class Solution {
 
         return answer.toTypedArray()
     }
+
+    fun getDistance(point: IntArray): Int = point[0] * point[0] + point[1] * point[1]
 }
