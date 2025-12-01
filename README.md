@@ -25,6 +25,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0560-subarray-sum-equals-k](https://github.com/mog-hi/leet-code/tree/master/0560-subarray-sum-equals-k) |
 | [0739-daily-temperatures](https://github.com/mog-hi/leet-code/tree/master/0739-daily-temperatures) |
 | [0792-binary-search](https://github.com/mog-hi/leet-code/tree/master/0792-binary-search) |
+| [0862-shortest-subarray-with-sum-at-least-k](https://github.com/mog-hi/leet-code/tree/master/0862-shortest-subarray-with-sum-at-least-k) |
 | [0875-koko-eating-bananas](https://github.com/mog-hi/leet-code/tree/master/0875-koko-eating-bananas) |
 | [0892-shortest-subarray-with-sum-at-least-k](https://github.com/mog-hi/leet-code/tree/master/0892-shortest-subarray-with-sum-at-least-k) |
 | [0973-k-closest-points-to-origin](https://github.com/mog-hi/leet-code/tree/master/0973-k-closest-points-to-origin) |
@@ -42,6 +43,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0209-minimum-size-subarray-sum](https://github.com/mog-hi/leet-code/tree/master/0209-minimum-size-subarray-sum) |
 | [0560-subarray-sum-equals-k](https://github.com/mog-hi/leet-code/tree/master/0560-subarray-sum-equals-k) |
+| [0862-shortest-subarray-with-sum-at-least-k](https://github.com/mog-hi/leet-code/tree/master/0862-shortest-subarray-with-sum-at-least-k) |
 | [0892-shortest-subarray-with-sum-at-least-k](https://github.com/mog-hi/leet-code/tree/master/0892-shortest-subarray-with-sum-at-least-k) |
 ## Two Pointers
 |  |
@@ -63,6 +65,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/mog-hi/leet-code/tree/master/0167-two-sum-ii-input-array-is-sorted) |
 | [0209-minimum-size-subarray-sum](https://github.com/mog-hi/leet-code/tree/master/0209-minimum-size-subarray-sum) |
 | [0792-binary-search](https://github.com/mog-hi/leet-code/tree/master/0792-binary-search) |
+| [0862-shortest-subarray-with-sum-at-least-k](https://github.com/mog-hi/leet-code/tree/master/0862-shortest-subarray-with-sum-at-least-k) |
 | [0875-koko-eating-bananas](https://github.com/mog-hi/leet-code/tree/master/0875-koko-eating-bananas) |
 | [0892-shortest-subarray-with-sum-at-least-k](https://github.com/mog-hi/leet-code/tree/master/0892-shortest-subarray-with-sum-at-least-k) |
 ## Sorting
@@ -97,6 +100,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0209-minimum-size-subarray-sum](https://github.com/mog-hi/leet-code/tree/master/0209-minimum-size-subarray-sum) |
 | [0239-sliding-window-maximum](https://github.com/mog-hi/leet-code/tree/master/0239-sliding-window-maximum) |
+| [0862-shortest-subarray-with-sum-at-least-k](https://github.com/mog-hi/leet-code/tree/master/0862-shortest-subarray-with-sum-at-least-k) |
 | [0892-shortest-subarray-with-sum-at-least-k](https://github.com/mog-hi/leet-code/tree/master/0892-shortest-subarray-with-sum-at-least-k) |
 ## Stack
 |  |
@@ -111,18 +115,21 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0239-sliding-window-maximum](https://github.com/mog-hi/leet-code/tree/master/0239-sliding-window-maximum) |
+| [0862-shortest-subarray-with-sum-at-least-k](https://github.com/mog-hi/leet-code/tree/master/0862-shortest-subarray-with-sum-at-least-k) |
 | [0892-shortest-subarray-with-sum-at-least-k](https://github.com/mog-hi/leet-code/tree/master/0892-shortest-subarray-with-sum-at-least-k) |
 ## Heap (Priority Queue)
 |  |
 | ------- |
 | [0215-kth-largest-element-in-an-array](https://github.com/mog-hi/leet-code/tree/master/0215-kth-largest-element-in-an-array) |
 | [0239-sliding-window-maximum](https://github.com/mog-hi/leet-code/tree/master/0239-sliding-window-maximum) |
+| [0862-shortest-subarray-with-sum-at-least-k](https://github.com/mog-hi/leet-code/tree/master/0862-shortest-subarray-with-sum-at-least-k) |
 | [0892-shortest-subarray-with-sum-at-least-k](https://github.com/mog-hi/leet-code/tree/master/0892-shortest-subarray-with-sum-at-least-k) |
 | [0973-k-closest-points-to-origin](https://github.com/mog-hi/leet-code/tree/master/0973-k-closest-points-to-origin) |
 ## Monotonic Queue
 |  |
 | ------- |
 | [0239-sliding-window-maximum](https://github.com/mog-hi/leet-code/tree/master/0239-sliding-window-maximum) |
+| [0862-shortest-subarray-with-sum-at-least-k](https://github.com/mog-hi/leet-code/tree/master/0862-shortest-subarray-with-sum-at-least-k) |
 | [0892-shortest-subarray-with-sum-at-least-k](https://github.com/mog-hi/leet-code/tree/master/0892-shortest-subarray-with-sum-at-least-k) |
 ## Tree
 |  |
