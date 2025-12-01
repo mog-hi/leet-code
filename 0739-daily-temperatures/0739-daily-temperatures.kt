@@ -1,21 +1,22 @@
 class Solution {
     fun dailyTemperatures(temperatures: IntArray): IntArray {
-        val idxStack = ArrayDeque<Int>()
-        val result = IntArray(temperatures.size)
-
-        for (i in temperatures.size - 1 downTo 0) {
-            while (idxStack.isNotEmpty() && temperatures[idxStack.last()] <= temperatures[i]) {
-                idxStack.removeLast()
+        val n = temperatures.size
+        val answer = IntArray(n)
+        val stack = ArrayDeque<Int>()
+    
+        for (i in n-1 downTo 0) {
+            while (stack.isNotEmpty()) {
+                if (temperatures[stack.last()] > temperatures[i]) {
+                    answer[i] = stack.last() - i
+                    break
+                } else {
+                    stack.removeLast()
+                }
             }
-            if (idxStack.isNotEmpty()) {
-                result[i] = idxStack.last() - i
-            } else {
-                result[i] = 0
-            }
 
-            idxStack.addLast(i)
+            stack.addLast(i)
         }
 
-        return result 
+        return answer
     }
 }
