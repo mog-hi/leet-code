@@ -34,6 +34,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0001-two-sum](https://github.com/mog-hi/leet-code/tree/master/0001-two-sum) |
+| [0013-roman-to-integer](https://github.com/mog-hi/leet-code/tree/master/0013-roman-to-integer) |
 | [0141-linked-list-cycle](https://github.com/mog-hi/leet-code/tree/master/0141-linked-list-cycle) |
 | [0142-linked-list-cycle-ii](https://github.com/mog-hi/leet-code/tree/master/0142-linked-list-cycle-ii) |
 | [0160-intersection-of-two-linked-lists](https://github.com/mog-hi/leet-code/tree/master/0160-intersection-of-two-linked-lists) |
@@ -80,6 +81,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## String
 |  |
 | ------- |
+| [0013-roman-to-integer](https://github.com/mog-hi/leet-code/tree/master/0013-roman-to-integer) |
 | [0020-valid-parentheses](https://github.com/mog-hi/leet-code/tree/master/0020-valid-parentheses) |
 | [0242-valid-anagram](https://github.com/mog-hi/leet-code/tree/master/0242-valid-anagram) |
 ## Dynamic Programming
@@ -167,6 +169,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Math
 |  |
 | ------- |
+| [0013-roman-to-integer](https://github.com/mog-hi/leet-code/tree/master/0013-roman-to-integer) |
 | [0070-climbing-stairs](https://github.com/mog-hi/leet-code/tree/master/0070-climbing-stairs) |
 | [0973-k-closest-points-to-origin](https://github.com/mog-hi/leet-code/tree/master/0973-k-closest-points-to-origin) |
 ## Memoization
